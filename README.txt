@@ -51,18 +51,18 @@ Se puede agregar codigo jQuery por medio del archivo main.js.
 El boilerplate contiene Reloader, el cual permite la recarga automatica al actualizar los archivos,
 estos se configuran en el archivo main.js.
 
-		Reloadr.go({
-		  client: [
-		    'js/main.js',
-		    'css/main.css'
-		  ],
-		  server: [
-		    '*.php'
-		  ],
-		  path: 'reloadr.php',
+	Reloadr.go({
+	  client: [
+	    'js/main.js',
+	    'css/main.css'
+	  ],
+	  server: [
+	    '*.php'
+	  ],
+	  path: 'reloadr.php',
 
-		  frequency:100
-		});
+	  frequency:100
+	});
 
 == Formas de contacto ==
 
@@ -70,10 +70,10 @@ El boilerplate contiene la configuracion para enviar correos por medio de la for
 se pueden agregar mas campos, solo se agregan los inputs en el archivo contacto.php y se agregan en 
 el archivo contacto-enviar.php.
 		
-		contacto.php
+	contacto.php
 
-			<input type="email" name="email">
+		<input type="email" name="email">
 
-		contacto-enviar.php
+	contacto-enviar.php
 
-			$email_message .= "Email: ".$data['email']."<br>";
+		$email_message .= "Email: ".$data['email']."<br>";
