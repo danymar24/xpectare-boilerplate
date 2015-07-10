@@ -1,7 +1,5 @@
 <?php
 	
-	$data = json_decode(file_get_contents('php://input'), true);
-
 	// Editar los valores del correo
 
 	// Email receptor 1
@@ -13,6 +11,11 @@
 	
 	// Correo que envia
 	$email_from = "correoenvia@envia.com";
+
+	// Datos post
+	$nombre = filter_var($_POST["nombre"], FILTER_SANITIZE_STRING);
+	$email = filter_var($_POST["email"], FILTER_SANITIZE_STRING);
+	$mensaje = filter_var($_POST["mensaje"], FILTER_SANITIZE_STRING);
 
 	$headers = "From: " . $email_from . "\r\n";
 	$headers .= "MIME-Version: 1.0\r\n";
