@@ -38,9 +38,9 @@ $(document).ready(function($) {
 	$("#forma-contacto").submit( function () {    
 	  $.post(
 	  	// Si no se usa servidor SMTP usar esta linea
-	  	'contacto-enviar.php',
+	  	'contacto/contacto-enviar.php',
 	  	// Si se usa servidor SMTP usar esta linea
-	  	// 'contacto-enviar-smtp.php'
+	  	// 'contacto/contacto-enviar-smtp.php'
 	    $(this).serialize(),
 	    function(data){
 	      $("#results").html(data)
