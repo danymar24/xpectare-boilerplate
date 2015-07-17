@@ -77,3 +77,5 @@ el archivo contacto-enviar.php.
 	contacto-enviar.php
 
 		$email_message .= "Email: ".$data['email']."<br>";
+
+Se le ha agregado la configuracion para usar servidor SMTP por medio de phpmailer, esta puede ser editada en: contacto/contacto-enviar-smtp.php
